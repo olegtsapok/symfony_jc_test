@@ -1,0 +1,37 @@
+product:
+    path:     /
+    defaults: { _controller: "TestBundle:Product:index" }
+
+product_show:
+    path:     /{id}/show
+    defaults: { _controller: "TestBundle:Product:show" }
+
+product_new:
+    path:     /new
+    defaults: { _controller: "TestBundle:Product:new" }
+
+product_create:
+    path:     /create
+    defaults: { _controller: "TestBundle:Product:create" }
+    methods:  POST
+
+product_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TestBundle:Product:edit" }
+
+product_update:
+    path:     /{id}/update
+    defaults: { _controller: "TestBundle:Product:update" }
+    methods:  [POST, PUT]
+
+product_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TestBundle:Product:delete" }
+    methods:  [POST, DELETE]
+    
+
+product_details_rest:
+    path:     /{id}/product_details
+    defaults: { _controller: "TestBundle:Product:getProductDetails", _format: json  }
+    methods:  [GET, POST]
+    

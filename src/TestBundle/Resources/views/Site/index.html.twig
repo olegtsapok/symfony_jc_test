@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Index</h1>
+
+    <ul>
+        <li>
+            <a href="{{ path('product') }}">products</a>
+        </li>
+        <li>
+            <a href="{{ path('category') }}">categories</a>
+        </li>
+        <li>
+            <a href="{{ path('photo') }}">photos</a>
+        </li>
+        <li>
+            <a href="{{ path('discount') }}">discounts</a>
+        </li>
+        <li>
+            <a href="{{ path('product_details_rest', { 'id': 1 }) }}">Rest product_details</a>
+        </li>
+        
+        
+    </ul>
+    
+{% endblock %}

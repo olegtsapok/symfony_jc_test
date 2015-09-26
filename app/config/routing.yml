@@ -1,0 +1,4 @@
+test:
+    resource: "@TestBundle/Resources/config/routing.yml"
+
+    

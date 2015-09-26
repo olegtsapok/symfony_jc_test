@@ -1,0 +1,7 @@
+
+services:
+
+    photo:
+        class:        TestBundle\Components\Photo
+        arguments:    [@service_container]
+

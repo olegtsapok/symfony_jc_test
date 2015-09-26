@@ -1,0 +1,30 @@
+discount:
+    path:     /
+    defaults: { _controller: "TestBundle:Discount:index" }
+
+discount_show:
+    path:     /{id}/show
+    defaults: { _controller: "TestBundle:Discount:show" }
+
+discount_new:
+    path:     /new
+    defaults: { _controller: "TestBundle:Discount:new" }
+
+discount_create:
+    path:     /create
+    defaults: { _controller: "TestBundle:Discount:create" }
+    methods:  POST
+
+discount_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TestBundle:Discount:edit" }
+
+discount_update:
+    path:     /{id}/update
+    defaults: { _controller: "TestBundle:Discount:update" }
+    methods:  [POST, PUT]
+
+discount_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TestBundle:Discount:delete" }
+    methods:  [POST, DELETE]
